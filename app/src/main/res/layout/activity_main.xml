@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_main1"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/sb_main1"
+        android:text="滑块一当前值为0"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <com.whoisaa.mseekbar.MSeekBar
+        android:id="@+id/sb_main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:layout_above="@+id/tv_main2"
+        android:progress="0"
+        android:progressDrawable="@drawable/bg_seekbar_progress_drawable"
+        android:thumb="@mipmap/icon_seekbar_thumb"
+        app:textBackground="@mipmap/bg_seekbar_display1"
+        app:textColor="@color/white"
+        app:textOrientation="top"
+        app:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_main2"
+        android:layout_width="wrap_content"
+        android:text="滑块二当前值为0"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <com.whoisaa.mseekbar.MSeekBar
+        android:id="@+id/sb_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_main2"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/bg_seekbar_progress_drawable"
+        android:thumb="@mipmap/icon_seekbar_thumb"
+        app:textBackground="@mipmap/bg_seekbar_display2"
+        app:textColor="@color/white"
+        app:textOrientation="bottom"
+        app:textSize="14sp"/>
+
+
+</RelativeLayout>
